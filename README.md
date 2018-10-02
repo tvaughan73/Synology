@@ -10,7 +10,7 @@ Synology.php was written for Codeigniter framework and also uses composer librar
 `composer require pragmarx/google2fa`
 
 ## Redis
-When connecting to DSM you will first need to submit an authorization request and get back a session ID token (sid).  The purpose of using Redis is to cache this token so it can be reused.  DSM does not expect to repeatedly receive authorization requests and will sometimes fail if it does.  Redis is not require here but you will need some way to cache the sid.  Either use some other memory cache or save to a file.
+When connecting to DSM you will first need to submit an authorization request and get back a session ID token (sid).  The purpose of using Redis is to cache this token so it can be reused.  DSM does not expect to repeatedly receive authorization requests and will sometimes fail if it does.  Redis is not required here but you will need some way to cache the sid.  Either use some other memory cache or save to a file.
 
 ## Google 2FA
 If 2FA is enabled on DSM it is requires that the 2FA code be submitted with the authorization request.  The 2FA library used here has a method to retrieve this value using the key given by DSM.  This key can be obtained only when a user first logs in to DSM and is asked to complete 2FA setup.
