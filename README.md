@@ -3,7 +3,7 @@ PHP Library for Synology DSM 6
 
 All current PHP libraries on github for Synology DSM are old and will not work with DSM 6. Documentation for DSM 6 is pretty much non-existent.  This library will work with DSM 6 and is intended as a starting point for others.  All of the methods in this library were derived from observing the request and response from the DiskStation UI using Chrome developer tools.  
 
-Synology.php was written for Codeigniter framework and also uses the composer libraries for Redis and Google 2FA.
+Synology.php was written for Codeigniter framework and also uses composer libraries for Redis and Google 2FA.
 
 `composer require predis/predis`
 
